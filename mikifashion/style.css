@@ -179,10 +179,10 @@ top: 257px;
 .gallery{
     background-color: #ecddb4;
 }
-.gallery .img {
-    width: 270px;
-    height: 350px;
-  }
+/* .gallery .img {
+    width: 200px;
+    height: 300px;
+  } */
   .owl-carousel .owl-next,
   .owl-carousel .owl-prev {
     height: 50px;
@@ -192,6 +192,11 @@ top: 257px;
     top: 35%;
     background: white !important;
     transition: 0.5s;
+  }
+  .item img{
+    height: 300px;
+    width: 270px;
+    object-fit: cover;
   }
   .owl-carousel .owl-prev {
     left: 33px;
@@ -239,6 +244,9 @@ top: 257px;
         background-image: linear-gradient(to right,rgb(240, 184, 29, 1),rgb(250, 241, 241, 0.9)), url(../mikiimage/conbak.jpg);
     }
     
+.news{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8),  rgba(0, 0, 0, 0.6)),  url(../mikiimage/g-7.jpg);
+}
 
     /* footer */
     .footer{

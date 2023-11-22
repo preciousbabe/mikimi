@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="../mikiimage/mikihomes.png">
     <link rel="stylesheet" href="./form.css">
     <link rel="shortcut icon" href="./assets/images/logo.png">
     <title>Register form</title>
@@ -59,47 +60,47 @@
             </div>
             <div class="row mt-4">
                 <div class="col-6">
-                    <label for="phone No" class="form-label small">Gender:</label>
-                    <input octavalidate="R" type="text" class="form-control" id="inp_phone" name="phone"/>
+                    <label for="gender" class="form-label small">Gender:</label>
+                    <input octavalidate="R" type="text" class="form-control" id="inp_gender" name="gender"/>
                 </div>
                 <div class="col-6">
-                    <label for="address" class="form-label small">Marital Status:</label>
-                    <input octavalidate="R" type="text" class="form-control" id="inp_address" name="address"/>
+                    <label for="marital" class="form-label small">Marital Status:</label>
+                    <input octavalidate="R" type="text" class="form-control" id="inp_marital" name="marital"/>
                 </div>
                 </div>
                 <div class="row my-4">
                     <div class="col-6">
-                        <input type="checkbox" class="form-check-input" id="buyer">
-                        <label class="form-check-label" for="buyer">Buyer</label>
+                        <input type="checkbox" class="form-check-input" id="buying">
+                        <label class="form-check-label" for="buyer">Buying</label>
                     </div>
                     <div class="col-6">
-                        <input type="checkbox" class="form-check-input" id="seller">
-                        <label class="form-check-label" for="seller">Seller</label>
+                        <input type="checkbox" class="form-check-input" id="selling">
+                        <label class="form-check-label" for="seller">Selling</label>
                     </div>
                     </div>
                <!-- for seller -->
                <h6 class="h6 mt-5">For Sellers Only</h6>
                <div class="row">
                 <div class="col-12">
-                    <label for="email" class="form-label small ">Location of Property:</label>
-                    <input octavalidate="R,EMAIL" type="email" class="form-control" id="inp_email" name="email" />
+                    <label for="location" class="form-label small ">Location of Property:</label>
+                    <input octavalidate="R" type="text" class="form-control" id="inp_location" name="location" />
                  </div> 
                </div>
                <div class="row mt-3">
                 <div class="col-12">
-                    <label for="email" class="form-label small ">Type of Ownership:</label>
-                    <input octavalidate="R,EMAIL" type="email" placeholder="sole/pattnership ownership" class="form-control" id="inp_email" name="email" />
+                    <label for="ownership" class="form-label small ">Type of Ownership:</label>
+                    <input octavalidate="R" type="text" placeholder="sole/pattnership ownership" class="form-control" id="inp_ownership" name="ownership" />
                  </div> 
                </div>
                <div class="row mt-3">
                 <div class="col-9">
-                    <label for="email" class="form-label small ">price range:</label>
-                    <input octavalidate="R,EMAIL" type="email" class="form-control" id="inp_email" name="email" />
+                    <label for="price" class="form-label small ">price range:</label>
+                    <input octavalidate="R" type="text" class="form-control" id="inp_price" name="price" />
                  </div> 
                </div>
                <div class="row mt-3">
                 <div class="col">
-                    <label for="">Do you currently live in the house?</label>
+                    <label for="">Are you currently using the property?</label>
                 </div>
                </div>
                <div class="row mb-3">
@@ -136,12 +137,16 @@
              </div>
              </div> -->
              <h6 class="h6 mt-5">For Buyers Only</h6>
-             <div class="row">
-                <div class="col-12">
-                    <label for="email" class="form-label small ">Desired Location:</label>
-                    <input octavalidate="R,EMAIL" type="email" class="form-control" id="inp_email" name="email" />
-                 </div> 
-               </div>
+             <div class="row mt-4">
+              <div class="col-6">
+                  <label for="property" class="form-label small">Preferred Property Type:</label>
+                  <input octavalidate="R" type="text" class="form-control" id="inp_property" name="property"/>
+              </div>
+              <div class="col-6">
+                  <label for="location" class="form-label small">Preferred Location:</label>
+                  <input octavalidate="R" type="text" class="form-control" id="inp_location" name="location"/>
+              </div>
+              </div>
                <div class="row mt-4">
                 <div class="col-6">
                     <input type="checkbox" class="form-check-input" id="buyer">
@@ -154,28 +159,25 @@
                 </div>
                 <div class="row mt-4">
                     <div class="col-6">
-                        <label for="phone No" class="form-label small">Price Range:</label>
-                        <input octavalidate="R" type="text" class="form-control" id="inp_phone" name="phone"/>
+                        <label for="price" class="form-label small">Price Range:</label>
+                        <input octavalidate="R" type="text" class="form-control" id="inp_price" name="price"/>
                     </div>
                     <div class="col-6">
-                        <label for="address" class="form-label small">No. of Occupants:</label>
-                        <input octavalidate="R" type="text" class="form-control" id="inp_address" name="address"/>
+                        <label for="occupants" class="form-label small">No. of Occupants:</label>
+                        <input octavalidate="R" type="text" class="form-control" id="inp_occupants" name="occupants"/>
                     </div>
                     </div>
                     <div class="row">
                         <div class="mb-3">
-                            <label for="property" class="form-label">Property Description:</label>
-                            <textarea class="form-control" id="property" rows="3"></textarea>
+                            <label for="comments" class="form-label">Additional comments or Specific requirements:</label>
+                            <textarea class="form-control" id="comments" rows="3"></textarea>
                           </div>
                        </div>
 
 
 
             <button class="btn btn-primary w-100 mt-4">Submit</button>
-            <!-- <div class="text-center">
-            <a href="./login.html" class="text-decoration-none text-center small">Already have an account? Login</a>
-          </div> -->
-         
+            
         </form>
         </div>
         </div>
